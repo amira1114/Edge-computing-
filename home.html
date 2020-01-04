@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Speech to text App with Flask
+		</div>
+		<h2>Speech To Text</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="/speechtotext" method="POST">
+		<p>Record your voice</p>
+		<br/>
+		<input type="submit" value="record"/>
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>
